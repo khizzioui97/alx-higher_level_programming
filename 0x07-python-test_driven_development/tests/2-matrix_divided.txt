@@ -1,0 +1,11 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix = [[1,23,2],[56,78,9],[67,98,37]]
+>>> print(matrix_divided(matrix, 4))
+[[0.25, 5.75, 0.5], [14.0, 19.5, 2.25], [16.75, 24.5, 9.25]]
+>>> matrix = [ [1, -2.2, 3, 4.4, 5],[-6.6, 7.00, 8, 9.999, 10]]
+>>> print(matrix_divided(matrix, 3))
+[[0.33, -0.73, 1.0, 1.47, 1.67], [-2.2, 2.33, 2.67, 3.33, 3.33]]
+>>> matrix = "not "
+>>> print(matrix_divided(matrix, 3))
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>>
