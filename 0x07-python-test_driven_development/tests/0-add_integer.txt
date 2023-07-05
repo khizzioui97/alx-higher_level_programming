@@ -1,0 +1,11 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(23,21)
+44
+>>> add_integer(2,29.5)
+31
+>>> add_integer(20,"salmane")
+TypeError: b must be an integer
+>>> add_integer(65,"3")
+TypeError: b must be an integer
+>>> add_integer(2)
+100
