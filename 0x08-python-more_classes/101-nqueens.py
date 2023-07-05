@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """the N-queens puzzle solved."""
 
+
 import sys
 
 
+
 def init_board(n):
-    """Initializing an `n`x`n` sized chessboard with 0's."""
+    """Initializing an `n `x `n ` sized chessboard with 0's."""
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
     return (board)
+
 
 
 def board_deepcopy(board):
@@ -17,6 +20,7 @@ def board_deepcopy(board):
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
+
 
 
 def get_solution(board):
